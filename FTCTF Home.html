@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name = "keywords" content = "ibots, teamfinder, team,">
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+
+body {
+    
+    font-family: 'Oswald', sans-serif;
+    background-image: url("http://i.imgur.com/okdI0Uh.png");
+}
+
+
+/* Navigation Bar: Start */
+.nav ul {
+    list-style-type: none;
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.nav li {
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4vw;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+
+    /* Diplay Inline */
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: rgb(0,200,180);
+}
+
+.nav a:active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 25%;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.3vw;
+  }
+} /* Navigation Bar: End */
+
+
+img {
+    display: block;
+    max-width:100%;
+    max-height:auto;
+    width: auto;
+    height: auto;
+}
+/* White Body Wrapper Background */
+.bwrapper {
+    background-color: white;
+    padding: 45px;
+    float: none;
+    height: 99%;
+    position: static;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#First_logo{
+    width:100%; /* you can use % */
+    height: auto;
+}
+#Welcome {
+    float: center;
+    font-size: 5vw;
+}
+/* All Diplayed Team Data: Start */
+/*.AllTeamsData {
+    background-color: #000000;
+    padding: 45px;
+    float: none;
+    height: 100px;
+    width: inherit;
+    font-size: 16px;
+    margin: auto; */ 
+} /* All Diplayed Team Data: End */
+
+</style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class = "nav">
+<div id ="hwrapper">
+<ul class="navlinks">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#teamfinder">Team Finder</a></li>
+  <li><a href="#aboutus">About Us</a></li>
+  <li><a href="#scholarships">Scholarships</a></li>
+</ul>
+</div>
+</div>
+<!-- White Body: Start-->
+<div class = "bwrapper">
+
+
+
+<img id="First_logo" src="http://test.team340.org/test001/wp-content/uploads/2015/09/FIRST_horz.gif" alt="first_logo">
+
+<div id="Welcome"><h1>Welcome!</h1></div>
+
+</div> <!-- White Body: End -->
+</body>
+</html>
