@@ -10,25 +10,28 @@
 body {
     
     font-family: 'Oswald', sans-serif;
-    background-image: url("http://i.imgur.com/okdI0Uh.png");
+    /*background-image: url("http://i.imgur.com/okdI0Uh.png");*/
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 /* Navigation Bar: Start */
 .nav ul {
     list-style-type: none;
-    background-color: #444;
-    margin: 0;
-    padding: 0;
+    background-color: #282828;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     overflow: hidden;
-    
+    border: none;
 }
 
 .nav li {
     
     font-family: 'Oswald', sans-serif;
-    font-size: 2.3vw;
+    font-size: 2.4vw;
     line-height: 40px;
     height: 40px;
     border-bottom: 1px solid #888;
@@ -57,25 +60,19 @@ body {
 
 @media screen and (min-width: 600px) {
   .nav li {
-    width: 155px;
+    width: 25%;
     border-bottom: none;
-    height: 50px;
+    height: 5%;
     line-height: 50px;
-    font-size: 1.4vw;
+    font-size: 2.3vw;
   }
 } /* Navigation Bar: End */
 
 
-/* White Body Wrapper Background */
-.bwrapper {
-    background-color: white;
-    padding: 45px;
-    float: none;
-    height: 99%;
-    position: static;
-    margin-left: 10%;
-    margin-right: 10%;
+.pagetext {
+    padding-left: 40px;
 }
+
 
 /* State Selector: Start */
 .stateselector {
@@ -89,7 +86,7 @@ body {
 } /* State Selector: End */
 
 
-/* All Diplayed Team Data: Start */
+/* All Diplayed Data: Start */
 .AllDisplayedData {
     background-color: #000000;
     padding: 45px;
@@ -98,8 +95,22 @@ body {
     width: inherit;
     font-size: 16px;
     margin: auto;
-} /* All Diplayed Team Data: End */
+} /* All Diplayed Data: End */
 
+a {
+    color:#000000;
+}
+
+.Missouri a:active a:hover a:visited {
+    
+}
+#MissouriTeamData {
+    visibility: hidden;
+}
+
+#MissouriTeamData {
+    visibility: visible;
+}
 </style>
 </head>
 <body>
@@ -118,11 +129,11 @@ body {
 </div>
 </div>
 <!-- White Body: Start-->
-<div class = "bwrapper">
+<div class = "pagetext">
 
 <!-- Team Finder drop down menu -->
 <div class = "stateselector">
-<h3>What State are you looking for? </h3>
+<h3>*More States to Come! </h3>
 <select name="states">
         <option value="Alabama">Alabama</option>
         <option value="Alaska">Alaska</option>
@@ -175,17 +186,19 @@ body {
  </div>
 
 <div class = "AllDiplayedData">
-
-<h1> Missouri </h1>
-    <h2><u>6127 iBots</u></h2>
-    <p><b>Bio:</b></p>
-    <p>Team info
-    <p><b>Contact Info</b></p>
-    <ul>
-        <li>Email: stlwizftc@gmail.com</li>
-    </ul>
-
-<h1>Alaska</h1>
+    <div class = "Missouri">
+        <h1><a href="#MissouriHeading">Missouri</a></h1>
+            <div id="MissouriTeamData">
+                <h2><u>6127 iBots</u></h2>
+                <p><b>Bio:</b></p>
+                <p>Team info
+                <p><b>Contact Info</b></p>
+                <ul>
+                    <li>Email: stlwizftc@gmail.com</li>
+                </ul>
+            </div>
+    </div>
+<!--<h1>Alaska</h1>
 <h1>Arizona</h1>
 <h1>Arkansas</h1>
 <h1>California</h1>
@@ -233,6 +246,7 @@ body {
 <h1>Washington</h1>
 <h1>West Virginia</h1>
 <h1>Wisconsin</h1>
+-->
 
 
 

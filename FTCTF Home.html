@@ -10,19 +10,22 @@
 body {
     
     font-family: 'Oswald', sans-serif;
-    background-image: url("http://i.imgur.com/okdI0Uh.png");
+    /*background-image: url("http://i.imgur.com/okdI0Uh.png");*/
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 /* Navigation Bar: Start */
 .nav ul {
     list-style-type: none;
-    background-color: #444;
-    margin: 0;
-    padding: 0;
+    background-color: #282828;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     overflow: hidden;
-    
+    border: none;
 }
 
 .nav li {
@@ -59,22 +62,16 @@ body {
   .nav li {
     width: 25%;
     border-bottom: none;
-    height: 50px;
+    height: 5%;
     line-height: 50px;
     font-size: 2.3vw;
   }
 } /* Navigation Bar: End */
 
 
-img {
-    display: block;
-    max-width:100%;
-    max-height:auto;
-    width: auto;
-    height: auto;
-}
+
 /* White Body Wrapper Background */
-.bwrapper {
+/*.bwrapper {
     background-color: white;
     padding: 45px;
     float: none;
@@ -82,26 +79,175 @@ img {
     position: static;
     margin-left: 10%;
     margin-right: 10%;
+}*/
+
+
+
+/*Interested in First little section: Start; */
+.firstinterestedwrapper {
+    float:left;
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: 500px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+
+}
+@media (max-width: 1170px){
+    .firstinterestedwrapper {
+        padding-bottom: 80px;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
 }
 
+.firstinterested h1 {
+    float: left;
+    font-size: 60px;
+    padding-top: 7%;
+    padding-left: 8%;
+    font-color: #474747;
+    font-weight: 400;
+
+}
+
+.firstinterested p {
+    float: left;
+    font-color: #909090;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 8%;
+    font-weight: 100;
+    margin: 0px;
+
+}
 #First_logo{
-    width:100%; /* you can use % */
+    padding-top: 3%;
+    width: 50%;
+    float: right;
+    display: inline;
+    max-width:40%;
+    max-height:auto;
     height: auto;
+    float: right;
+    padding-right: 10%;
+} /* Interested in FIRST end */
+
+/*Interested in First second section: Start; */
+.secondinterestedwrapper {
+    float:left;
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 500px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+
 }
-#Welcome {
-    float: center;
-    font-size: 5vw;
+@media (max-width: 1170px){
+    .secondinterestedwrapper {
+        padding-bottom: 80px;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
 }
-/* All Diplayed Team Data: Start */
-/*.AllTeamsData {
-    background-color: #000000;
-    padding: 45px;
-    float: none;
-    height: 100px;
-    width: inherit;
-    font-size: 16px;
-    margin: auto; */ 
-} /* All Diplayed Team Data: End */
+
+.secondinterested h1 {
+    float: left;
+    font-size: 60px;
+    padding-top: 7%;
+    padding-left: 8%;
+    font-color: #474747;
+    font-weight: 400;
+
+}
+
+.secondinterested p {
+    float: left;
+    font-color: #909090;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 8%;
+    font-weight: 100;
+    margin: 0px;
+
+}
+#First_logo2{
+    padding-top: 3%;
+    width: 50%;
+    float: left;
+    display: inline;
+    max-width:40%;
+    max-height:auto;
+    height: auto;
+    padding-left: 10%;
+} /* Interested in FIRST second section end */
+
+/*Interested in First little section: Start; */
+.thirdinterestedwrapper {
+    float:left;
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: 500px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+
+}
+@media (max-width: 1170px){
+    .thirdinterestedwrapper {
+        padding-bottom: 80px;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.thirdinterested h1 {
+    float: left;
+    font-size: 60px;
+    padding-top: 7%;
+    padding-left: 8%;
+    font-color: #474747;
+    font-weight: 400;
+
+}
+
+.thirdinterested p {
+    float: left;
+    font-color: #909090;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 8%;
+    font-weight: 100;
+    margin: 0px;
+
+}
+#First_logo3{
+    padding-top: 3%;
+    width: 50%;
+    float: right;
+    display: inline;
+    max-width:40%;
+    max-height:auto;
+    height: auto;
+    float: right;
+    padding-right: 10%;
+} /* Interested in FIRST end */
+
+
 
 </style>
 </head>
@@ -120,12 +266,30 @@ img {
 <!-- White Body: Start-->
 <div class = "bwrapper">
 
+<div class = firstinterestedwrapper>
+    <div class = firstinterested>
+        <img id="First_logo" src="http://test.team340.org/test001/wp-content/uploads/2015/09/FIRST_horz.gif" alt="first_logo" align="right">
+        <h1>Need Help Finding a Team?</h1>
+            <p>Click on the Team Finder tab to find teams in your area</p>
+    </div>
+</div>
 
+<div class = secondinterestedwrapper>
+    <div class = secondinterested>
+        <img id="First_logo2" src="http://test.team340.org/test001/wp-content/uploads/2015/09/FIRST_horz.gif" alt="first_logo" align="left">
+        <h1>Scholarships opportunities</h1>
+            <p>Scholarships tab to learn about scholarships available</p>
+    </div>
+</div>
 
-<img id="First_logo" src="http://test.team340.org/test001/wp-content/uploads/2015/09/FIRST_horz.gif" alt="first_logo">
+<div class = thirdinterestedwrapper>
+    <div class = thirdinterested>
+        <img id="First_logo3" src="http://test.team340.org/test001/wp-content/uploads/2015/09/FIRST_horz.gif" alt="first_logo" align="right">
+        <h1>Scholarships opportunities</h1>
+            <p>Scholarships tab to learn about scholarships available</p>
+</div>
 
-<div id="Welcome"><h1>Welcome!</h1></div>
-
+</div>
 </div> <!-- White Body: End -->
 </body>
 </html>
