@@ -1,4 +1,4 @@
-
 $(document).ready(function(){
-	$("h3").text("Test")	
-});
+	var test = $("<h1>test</h1>");
+	$('.Missouri').append(test);
+}
